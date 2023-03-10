@@ -1,0 +1,23 @@
+
+.btn-collapse{
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: aliceblue;
+    border-left: 4px solid #05a234;
+    padding: 8px;
+    margin: 4px 4px 0px 0px;
+    width: 100%;
+    text-align: start;
+    font-weight: 600;
+}
+.btn-collapse:hover{
+    background-color: rgb(216, 233, 248); 
+}
+.item-collapse{
+    margin: 4px;
+}
+
+.item-collapse-interno{
+    margin: 4px 4px 0px 12px;
+}

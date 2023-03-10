@@ -1,0 +1,210 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Árvore de Falhas</title>
+    <style>
+      .btn-collapse{
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: aliceblue;
+    border-left: 4px solid #05a234;
+    padding: 8px;
+    margin: 4px 4px 0px 0px;
+    width: 100%;
+    text-align: start;
+    font-weight: 600;
+}
+.item-collapse{
+    margin: 4px;
+}
+.item-collapse-interno{
+    margin: 4px 4px 0px 12px;
+}
+    </style>
+  </head>
+  <body>
+      <div class="item-collapse">
+      <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapsegeral" aria-expanded="false" aria-controls="collapsegeral">
+        Geral <i class="bi bi-caret-down"></i>
+      </button>
+          <div class="collapse" id="collapsegeral">
+    
+            <div class="item-collapse-interno">
+              <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapsegravacao" aria-expanded="false" aria-controls="collapsegravacao">
+                Gravação <i class="bi bi-caret-down"></i>
+              </button>
+                  <div class="collapse" id="collapsegravacao">
+                   
+                      <ul class="list-group">
+                        <li class="list-group-item">Não grava por Detecção de Movimento <a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#modaldm"><i class="bi bi-arrow-up-right-square"></i></a></li>
+
+                        <!-- Modal -->
+                        <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="modaldm" tabindex="-1" aria-labelledby="modaldm" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title btn-collapse " id="exampleModalLabel">Não grava por Detecção de Movimento</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Problema: Não grava por detecção de movimento.  
+
+Cenário: Cliente liga informando que suas imagens não estão gravando por DM, ou deseja realizar esta operação. <br>
+
+Dados necessários: Modelo do DVR.<br>
+  
+Resumo: Realizar as configurações do menu Gravação, Agenda e Detectar. Informar ao cliente que temos vídeo tutorial que ensina como realizar esta operação. <br>
+
+Solução: <br>
+
+1 - Verificar o menu Armazenamento > Agenda: <br>
+- Solicitar ao cliente ver se todos os dias da semana estão no modo DM, conforme imagem abaixo, caso sim, prosseguir para o item 2: <br>
+
+        </p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+                        <li class="list-group-item">Não grava no Modo Regular <a href="#" target="_blank"><i class="bi bi-arrow-up-right-square"></i></a></li>
+                        <li class="list-group-item">Sem áudio na gravação <a href="#" target="_blank"><i class="bi bi-arrow-up-right-square"></i></a></li>
+                      </ul>
+                    
+                     
+                 </div>
+            </div>
+
+            <div class="item-collapse-interno">
+              <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesistema" aria-expanded="false" aria-controls="collapsesistema">
+                Sistema <i class="bi bi-caret-down"></i>
+              </button>
+                  <div class="collapse" id="collapsesistema">
+                    <div class="card">
+                      (construção)
+                    </div>
+                     
+                 </div>
+            </div>
+
+            <div class="item-collapse-interno">
+              <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseoutros" aria-expanded="false" aria-controls="collapseoutros">
+               Outros <i class="bi bi-caret-down"></i>
+              </button>
+                  <div class="collapse" id="collapseoutros">
+                    <div class="card">
+                      (construção)
+                    </div>
+                     
+                 </div>
+            </div>
+
+         </div>
+    </div>
+<!-- Rede -->
+    <div class="item-collapse">
+      <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapserede" aria-expanded="false" aria-controls="collapserede">
+        Rede <i class="bi bi-caret-down"></i>
+      </button>
+          <div class="collapse" id="collapserede">
+    
+            <div class="item-collapse-interno">
+              <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeral"
+                aria-expanded="false" aria-controls="collapseGeral">
+                Geral<i class="bi bi-caret-down"></i>
+              </button>
+              <div class="collapse" id="collapseGeral">
+            
+                <div class="card card-body">
+                  (construção)
+                </div>
+              </div>
+            </div>
+
+            <div class="item-collapse-interno">
+              <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseintelbrascloud"
+                aria-expanded="false" aria-controls="collapseintelbrascloud">
+               Intelbras Cloud<i class="bi bi-caret-down"></i>
+              </button>
+              <div class="collapse" id="collapseintelbrascloud">
+            
+                <div class="card card-body">
+                  (construção)
+                </div>
+              </div>
+            </div>
+
+         </div>
+    </div>
+<!-- Alimentação   -->
+    <div class="item-collapse">
+      <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapsealimentacao" aria-expanded="false" aria-controls="collapsealimentacao">
+        Alimentação <i class="bi bi-caret-down"></i>
+      </button>
+          <div class="collapse" id="collapsealimentacao">
+    
+             <div class="card card-body">
+                itens alimentação
+             </div>
+         </div>
+    </div>
+<!-- Entradas Saidas de Video -->
+    <div class="item-collapse">
+      <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseavideo" aria-expanded="false" aria-controls="collapseavideo">
+        Entradas/Saídas de Video <i class="bi bi-caret-down"></i>
+      </button>
+          <div class="collapse" id="collapseavideo">
+    
+             <div class="card card-body">
+                itens video
+             </div>
+         </div>
+    </div>
+<!-- Alarme -->
+    <div class="item-collapse">
+      <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapsealarme" aria-expanded="false" aria-controls="collapsealarme">
+        Entradas/Saídas de Alarme<i class="bi bi-caret-down"></i>
+      </button>
+          <div class="collapse" id="collapsealarme">
+    
+             <div class="card card-body">
+                itens alarme
+             </div>
+         </div>
+    </div>
+<!-- Específicios -->
+    <div class="item-collapse">
+      <button class="btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseespecificos" aria-expanded="false" aria-controls="collapseespecificos">
+        Específicos<i class="bi bi-caret-down"></i>
+      </button>
+          <div class="collapse" id="collapseespecificos">
+    
+             <div class="card card-body">
+                itens especificos
+             </div>
+         </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
